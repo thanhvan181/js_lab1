@@ -4,6 +4,7 @@ import Tuyensinh from "./pages/tuyensinh";
 import Chuongtrinhdaotao from "./pages/chuongtrinhdaotao";
 import detailsPage from "./pages/detailsPage";
 import adminPage from "./pages/adminPage";
+import signInPage from "./pages/signInPage";
 
 const router = new Navigo("/", { linksSelector: "a" });
 const renders = (content) => {
@@ -34,6 +35,9 @@ router.on({
     },
     "/admin/": () => {
         renders(adminPage.render());
+    },
+    "/signin": () => {
+        renders(signInPage.render());
     },
 });
 router.resolve();

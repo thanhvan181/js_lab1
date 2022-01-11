@@ -1,23 +1,26 @@
-import loGo from "../components/logo";
-import meNu from "../components/menu";
-// import searchInput from "../components/searchInput";
-import banner from "../components/banner";
-import actives from "../components/actives";
-import news from "../components/news";
-import footer from "../components/footer";
+// import loGo from "../components/logo";
+// import meNu from "../components/menu";
 
+// import banner from "../components/banner";
+// import actives from "../components/actives";
+// import news from "../components/news";
+// import footer from "../components/footer";
+// import dangky from "../components/danky";
+import navbars from "../components/navbars";
+import hero from "../components/hero";
+import mens from "../components/mens";
+import womens from "../components/womens";
+import newletter from "../components/newletter";
 const HomePage = {
     render() {
         return /* html */ `
-         <div class="max-w-5xl mx-auto">
-         ${loGo.render()}
-         ${meNu.render()}
-         ${banner.render()}
-         ${actives.render()}
-         ${news.render()}
-         ${footer.render()}
-
-
+        
+        
+        ${navbars.render()}
+        ${hero.render()}
+        ${mens.render()}
+        ${womens.render()}
+        ${newletter.render()}
          </div>
         
         `;
