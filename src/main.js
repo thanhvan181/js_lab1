@@ -7,23 +7,23 @@ import adminPage from "./pages/adminPage";
 
 const router = new Navigo("/", { linksSelector: "a" });
 const renders = (content) => {
-    document.querySelector("#app").innerHTML = content.render();
+    document.querySelector("#app").innerHTML = content;
 };
 
 router.on({
     // Neu user truy cap vao duong dan / thi se lam viec gi do
 
     "/": () => {
-        renders(HomePage);
+        renders(HomePage.render());
     },
     "/tuyensinh": () => {
-        renders(Tuyensinh);
+        renders(Tuyensinh.render());
     },
     "/chuongtrinhdaotao": () => {
-        renders(Chuongtrinhdaotao);
+        renders(Chuongtrinhdaotao.render());
     },
     "/goctuyensinh": () => {
-        renders(Chuongtrinhdaotao);
+        renders(Chuongtrinhdaotao.render());
     },
     "/tuyendung": () => {
         renders(Chuongtrinhdaotao);
