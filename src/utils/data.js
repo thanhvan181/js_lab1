@@ -31,23 +31,31 @@ export const data = [
 export const menuList = [
     {
         links: "/",
-        title: "Trang Tru",
+        title: "Home",
     },
     {
-        links: "tuyensinh",
-        title: "Tuyen Sinh",
+        links: "/shop",
+        title: "Shop",
     },
     {
-        links: "chuongtrinhdaotao",
-        title: "Chuong Trinh Dao Tao",
+        links: "/blog",
+        title: "Blog",
     },
     {
-        links: "goctuyensinh",
-        title: "Goc Tuyen Sinh",
+        links: "/contact",
+        title: "Contact",
     },
     {
-        links: "tuyendung",
-        title: "Tuyen Dung",
+        links: "/singin",
+        title: "SignIn",
+    },
+    {
+        links: "/singup",
+        title: "SignUp",
+    },
+    {
+        links: "/admin/dashboard",
+        title: "Admin",
     },
 ];
 export const tableListData = [{
@@ -131,3 +139,77 @@ export const tableListData = [{
 
 },
 ];
+export const mensData = [
+    {   id: 5,
+        product_titile: "Mens T-Shirt",
+        product_img: "./images/products/men/product1.jpg",
+        product_size: "XL",
+        product_color: "xanh",
+        product_price: "158.000VND"
+
+
+    },
+    {   id: 6,
+        product_titile: "Slim Khaki Tousers",
+        product_img: "./images/products/men/product2.jpg",
+        product_size: "XL",
+        product_color: "xanh",
+        product_price: "110.000VND"
+
+    },
+    {   id: 7,
+        product_titile: "Nike Shoes",
+        product_img: "./images/products/men/product3.jpg",
+        product_size: "XL",
+        product_color: "xanh",
+        product_price: "140.000VND"
+
+
+    },
+    {   id: 8,
+        product_titile: "Wirst Watch",
+        product_img: "./images/products/men/product4.jpg",
+        product_size: "XL",
+        product_color: "xanh",
+        product_price: "150.000VND"
+
+    },
+]
+
+export const womentsData = [
+
+    {   id: 1,
+        product_titile: "V Neck Tassel Cape",
+        product_img: "./images/products/women/product1.jpg",
+        product_size: "XL",
+        product_color: "xanh",
+        product_price: "120.000VND"
+
+
+    },
+    {   id: 2,
+        product_titile: "Printed Wrap Dress",
+        product_img: "./images/products/women/product2.jpg",
+        product_size: "XL",
+        product_color: "xanh",
+        product_price: "120.000VND"
+
+    },
+    {   id: 3,
+        product_titile: "Blue Denim Dress",
+        product_img: "./images/products/women/product3.jpg",
+        product_size: "XL",
+        product_color: "xanh",
+        product_price: "120.000VND"
+
+
+    },
+    {   id: 4,
+        product_titile: "High Waist Denim Skirt",
+        product_img: "./images/products/women/product4.jpg",
+        product_size: "XL",
+        product_color: "xanh",
+        product_price: "120.000VND"
+
+    },
+]

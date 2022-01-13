@@ -8,9 +8,11 @@
 // import dangky from "../components/danky";
 import navbars from "../components/navbars";
 import hero from "../components/hero";
-import mens from "../components/mens";
+import Mens from "../components/mens";
 import womens from "../components/womens";
 import newletter from "../components/newletter";
+import footer from "../components/footer";
+
 const HomePage = {
     render() {
         return /* html */ `
@@ -18,9 +20,10 @@ const HomePage = {
         
         ${navbars.render()}
         ${hero.render()}
-        ${mens.render()}
+        ${Mens.render()}
         ${womens.render()}
         ${newletter.render()}
+        ${footer.render()}
          </div>
         
         `;
