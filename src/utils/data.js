@@ -1,7 +1,7 @@
 export const data = [
     {
         id: 1,
-        img: "./image/sinhvien.jpeg",
+        img: "./images/anh2.jpeg",
         title: "Vinh danh 287 sinh vien FPT polytechnic ky sping 2022",
         desc: ` Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn.Lorem Ipsum đã
             được sử dụng như một văn bản chuẩn cho ngành công nghiệp in ấn 
@@ -10,7 +10,7 @@ export const data = [
     },
     {
         id: 2,
-        img: "./image/sinhvien.jpeg",
+        img: "./images/anh2.jpeg",
         title: "Le trao giai ong vang ky spring 2022 cho 100 sinh vien xuat xac",
         desc: ` Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn.Lorem Ipsum đã
             được sử dụng như một văn bản chuẩn cho ngành công nghiệp in ấn 
@@ -19,7 +19,7 @@ export const data = [
     },
     {
         id: 3,
-        img: "./image/sinhvien.jpeg",
+        img: "./images/anh2.jpeg",
         title: "Thuong tet nguyen dan 2022 cho can bo giao vien truong cao dang pft polytechnic",
         desc: ` Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn.Lorem Ipsum đã
             được sử dụng như một văn bản chuẩn cho ngành công nghiệp in ấn 
@@ -31,27 +31,24 @@ export const data = [
 export const menuList = [
     {
         links: "/",
-        title: "Home",
+        title: "Trang Tru",
     },
     {
         links: "/shop",
-        title: "Shop",
+        title: "Tuyensinh",
     },
     {
         links: "/blog",
-        title: "Blog",
+        title: "Chuongtrinhdaotao",
     },
-    {
-        links: "/contact",
-        title: "Contact",
-    },
+    
     {
         links: "/singin",
-        title: "SignIn",
+        title: "Đăng nhập",
     },
     {
         links: "/singup",
-        title: "SignUp",
+        title: "Dang ky",
     },
     {
         links: "/admin/dashboard",

@@ -1,7 +1,7 @@
 // import loGo from "../components/logo";
 // import meNu from "../components/menu";
 
-// import banner from "../components/banner";
+import banner from "../components/banner";
 // import actives from "../components/actives";
 // import news from "../components/news";
 // import footer from "../components/footer";
@@ -19,10 +19,10 @@ const HomePage = {
         
         
         ${navbars.render()}
-        ${hero.render()}
+        ${banner.render()}
         ${Mens.render()}
         ${womens.render()}
-        ${newletter.render()}
+       
         ${footer.render()}
          </div>
         

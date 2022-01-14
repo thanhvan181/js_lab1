@@ -10,7 +10,7 @@ import dashboardPage from "./pages/dashboardPage";
 import NewsPage from "./pages/NewsPage";
 // import NewsPage from "./pages/adminPage";
 import addNewPage from "./pages/addNewPage";
-import detailsproductPageMen from "./pages/menproductpage";
+import editproductAdmin from "./pages/editproductAdmin";
 import detailsproductPageWoment from "./pages/detailsproductPageWoment";
 
 
@@ -60,17 +60,14 @@ router.on({
     "/admin/news/add": () => {
         renders(addNewPage.render());
     },
-    "/details/:id": ({ data }) => {
-        const { id } = data;
-        renders(detailsproductPageMen.render(+id));
-    },
+    
     "/details/:id": ({ data }) => {
         const { id } = data;
         renders(detailsproductPageWoment.render(+id));
     },
-    "/admin/news/:id/edit": ({ data }) => {
-        const { id } = data;
-        renders(editproductAdmin.render(+id));
+    
+    "/admin/news/edit/id": (value) => {
+        renders(editproductAdmin.render(value.data.id));
     },
 
 

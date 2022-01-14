@@ -1,7 +1,9 @@
+import {data } from "../utils/data"
+
 const editproductAdmin ={
   
         render(id) {
-            const result = womentsData.find((women) => women.id === id);
+            const result = data.find((da) => da.id === id);
             return /* html */`
             <div>
             <img class="mx-auto h-12 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="Workflow" />
@@ -13,41 +15,25 @@ const editproductAdmin ={
             <div class="bg-white py-8 px-6 shadow rounded-lg ">
             <form class="mb-0 space-y-6" action="#" method="POST">
                 <div>
-                <label for="email" class="block text-sm font-medium text-gray-700">Product Image</label>
+                <label for="email" class="block text-sm font-medium text-gray-700">News Image</label>
                 <div class="mt-1">
-                    <input id="email" name="email" type="file" autocomplete="email" required class="" value=${result.product_img} />
+                    <input id="email" name="email" type="file" autocomplete="email" required class="" value=${result.img} />
                 </div>
                 </div>
 
                 <div>
-                <label for="password" class="block text-sm font-medium text-gray-700">Product Title</label>
+                <label for="password" class="block text-sm font-medium text-gray-700">News Title</label>
                 <div class="mt-1">
-                    <input id="password" name="password" type="text" autocomplete="current-password" required class="" value=${result.product_titile}  />
+                    <input id="password" name="password" type="text" autocomplete="current-password" required class="" value=${result.title}  />
                 </div>
                 </div>
                 <div>
-                <label for="password" class="block text-sm font-medium text-gray-700">Product Size</label>
+                <label for="password" class="block text-sm font-medium text-gray-700">News Desc</label>
                 <div class="mt-1">
-                    <input id="password" name="password" type="password" autocomplete="current-password" required class="" value=${result.product_size} />
+                    <input id="password" name="password" type="password" autocomplete="current-password" required class="" value=${result.desc} />
                 </div>
                 </div>
-                <div>
-                <label for="password" class="block text-sm font-medium text-gray-700">Product Color</label>
-                <div class="mt-1">
-                    <input id="password" name="password" type="password" autocomplete="current-password" required class="" value=${result.product_color} />
-                </div>
-                </div>
-                <div>
-                <label for="company-size" class="block text-sm font-medium text-gray-700">choose opition</label>
-                <div class="mt-1">
-                    <select name="company-size" id="company-size" class="">
-                    <option value="">Men</option>
-                    <option value="small">woment</option>
-                    <
-                    </select>
-                </div>
-                </div>
-
+                
                 
                
 
