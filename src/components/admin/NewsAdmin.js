@@ -62,7 +62,7 @@ const NewsAdmin = {
                 </td>
                
                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-               <a href="/admin/news/edit/${item.id}"> Edit</a>
+               <a href="/admin/news/edit:${item.id}"> Edit</a>
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                <a> Delete</a>

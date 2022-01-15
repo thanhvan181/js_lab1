@@ -66,7 +66,7 @@ router.on({
         renders(detailsproductPageWoment.render(+id));
     },
     
-    "/admin/news/edit/id": (value) => {
+    "/admin/news/edit:id": (value) => {
         renders(editproductAdmin.render(value.data.id));
     },
 
