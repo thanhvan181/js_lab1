@@ -6,12 +6,12 @@ import HomePage from "./pages/homepage";
 // import adminPage from "./pages/adminPage";
 import signInPage from "./pages/signInPage";
 import signUpPage from "./pages/signUpPage";
-import dashboardPage from "./pages/dashboardPage";
-import NewsPage from "./pages/NewsPage";
-// import NewsPage from "./pages/adminPage";
-import addNewPage from "./pages/addNewPage";
-import editproductAdmin from "./pages/editproductAdmin";
-import detailsproductPageWoment from "./pages/detailsproductPageWoment";
+import dashboardPage from "./pages/admin/dashboardPage";
+import NewsPage from "./pages/admin/NewsPage";
+
+import addNewPage from "./pages/admin/addNewPage";
+import editproductAdmin from "./pages/admin/editproductAdmin";
+import detailsproductPageWoment from "./pages/admin/detailsproductPageWoment";
 
 
 const router = new Navigo("/", { linksSelector: "a" });

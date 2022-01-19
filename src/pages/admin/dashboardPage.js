@@ -1,5 +1,5 @@
 
-import dashboard from "../components/admin/dashboard"
+import dashboard from "../../components/admin/dashboard"
 const  dashboardPage = {
     render(){
         return /* html */`

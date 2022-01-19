@@ -1,5 +1,5 @@
 
-import { data } from "../utils/data"
+import { data } from "../../utils/data"
 const detailsproductPageWoment = {
     render(id) {
         const result = data.find((da) => da.id === id);
