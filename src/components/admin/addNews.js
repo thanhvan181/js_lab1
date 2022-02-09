@@ -1,4 +1,6 @@
 import axios from 'axios';
+import { add } from "../../api/news/add";
+
 
 const addNews = {
 

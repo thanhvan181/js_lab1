@@ -1,6 +1,9 @@
 // import addNews from "../../components/admin/addNews";
 import axios from 'axios';
-import asideAdmin from "../../components/admin/asideAdmin"
+import asideAdmin from "../../components/admin/asideAdmin";
+import { add } from "../../api/news";
+
+
 const addNewPage = {
     render() {
         console.log("RENDER add new")
@@ -60,8 +63,8 @@ const addNewPage = {
         const formAdd = document.querySelector("#form-add-post");
         // const imgPreview = document.querySelector("#img-preview");
         const imgPost = document.querySelector("#img-post");
-        const CLOUDINARY_API_URL = "https://api.cloudinary.com/v1_1/ecommercer2021/image/upload";
-        const CLOUDINARY_PRESET = "jkbdphzy";
+        const CLOUDINARY_API_URL = "https://api.cloudinary.com/v1_1/ecommerce-vanthanh/image/upload";
+        const CLOUDINARY_PRESET = "ppcnsqib";
 
         formAdd.addEventListener("submit", async function (e) {
             e.preventDefault();

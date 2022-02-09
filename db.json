@@ -88,6 +88,62 @@
       "img": "http://placeimg.com/640/480/people",
       "desc": "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J",
       "id": "17"
+    },
+    {
+      "title": "",
+      "img": "http://res.cloudinary.com/ecommerce-vanthanh/image/upload/v1644379859/eco-van/s0yweibkaiaiwypl7pjk.jpg",
+      "desc": "",
+      "id": "QFgIQy8"
+    },
+    {
+      "title": "",
+      "img": "http://res.cloudinary.com/ecommerce-vanthanh/image/upload/v1644379860/eco-van/upnynoejb1meoepnglor.jpg",
+      "desc": "",
+      "id": "v_xna6O"
+    },
+    {
+      "title": "",
+      "img": "http://res.cloudinary.com/ecommerce-vanthanh/image/upload/v1644379861/eco-van/ptkzjrtnvvvx1ep34xzn.jpg",
+      "desc": "",
+      "id": "Pkh_sBp"
+    },
+    {
+      "title": "",
+      "img": "http://res.cloudinary.com/ecommerce-vanthanh/image/upload/v1644379861/eco-van/hrcsrlxwqardqqtfihkv.jpg",
+      "desc": "",
+      "id": "Ct11rga"
+    },
+    {
+      "title": "",
+      "img": "http://res.cloudinary.com/ecommerce-vanthanh/image/upload/v1644379862/eco-van/ui9dmmxsqdckjs5wbt56.jpg",
+      "desc": "",
+      "id": "XxBS7E9"
+    },
+    {
+      "title": "",
+      "img": "http://res.cloudinary.com/ecommerce-vanthanh/image/upload/v1644379876/eco-van/ggdkbp4ccnvjm94ysovc.jpg",
+      "desc": "",
+      "id": "lj2tZwd"
+    },
+    {
+      "title": "",
+      "img": "http://res.cloudinary.com/ecommerce-vanthanh/image/upload/v1644379877/eco-van/hiwhhudire5ye4usjm5d.jpg",
+      "desc": "",
+      "id": "6aAxYO8"
+    }
+  ],
+  "users": [
+    {
+      "email": "vanntph17034@fpt.edu.vn",
+      "password": "$2a$10$sY9zcrrslgE11wxk/ypNduh5gnlZFptqCQ4Lqf/fkdOJTgSNHCAwS",
+      "username": "vanntph17034",
+      "id": 1
+    },
+    {
+      "email": "thanhvan@gmail.com",
+      "password": "$2a$10$/Uzew/JDGVAaPzoxShXfk.rbAvWQKTE3qgKygN.x9CmBijwgrCB8q",
+      "username": "vanntph17034",
+      "id": 2
     }
   ]
 }

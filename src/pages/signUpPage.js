@@ -6,5 +6,9 @@ const signUpPage = {
         ${SignUp.render()}
         `;
     },
+     afterRender() {
+        return SignUp.afterRender();
+
+    }
 };
 export default signUpPage;

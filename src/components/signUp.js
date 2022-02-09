@@ -1,3 +1,7 @@
+
+
+import { signup } from "../api/user";
+
 const SignUp = {
     render() {
         return /* html */`
@@ -8,21 +12,21 @@ const SignUp = {
 
             <h2 class="text-3xl font-bold mb-10 text-gray-800">Create Your Account</h2>
 
-            <form class="space-y-5">
+            <form class="space-y-5" id="formSignup">
 
             <div>
                 <label class="block mb-1 font-bold text-gray-500">Name</label>
-                <input type="text" class="w-full border-2 border-gray-200 p-3 rounded outline-none focus:border-purple-500">
+                <input type="text" class="w-full border-2 border-gray-200 p-3 rounded outline-none focus:border-purple-500" id="username" cols>
             </div>
 
             <div>
                 <label class="block mb-1 font-bold text-gray-500">Email</label>
-                <input type="email" class="w-full border-2 border-gray-200 p-3 rounded outline-none focus:border-purple-500">
+                <input type="email" class="w-full border-2 border-gray-200 p-3 rounded outline-none focus:border-purple-500" id="email">
             </div>
 
             <div>
                 <label class="block mb-1 font-bold text-gray-500">Password</label>
-                <input type="password" class="w-full border-2 border-gray-200 p-3 rounded outline-none focus:border-purple-500">
+                <input type="password" class="w-full border-2 border-gray-200 p-3 rounded outline-none focus:border-purple-500" id="password">
             </div>
 
             <div class="flex items-center">
@@ -39,6 +43,23 @@ const SignUp = {
         </div>
 
         `
+    },
+    
+    afterRender(){
+        console.log("dang o trong render")
+        const formSignup = document.querySelector('#formSignup');
+        formSignup.addEventListener('submit', function (e) {
+            e.preventDefault();
+            signup({
+
+                username: document.querySelector('#username').value,
+                email: document.querySelector('#email').value,
+                password: document.querySelector('#password').value
+            })
+            console.log("singup");
+        });
     }
+    
+
 }
 export default SignUp
