@@ -14,64 +14,67 @@ import editproductAdmin from "./pages/admin/editproductAdmin";
 import detailsproductPageWoment from "./pages/admin/detailsproductPageWoment";
 
 
-const router = new Navigo("/", { linksSelector: "a" });
-const renders = (content) => {
-    document.querySelector("#app").innerHTML = content;
+const router = new Navigo("/", { linksSelector: "a", hash: true });
+const renders = async (content, id) => {
+    if (content.render){
+        document.querySelector("#app").innerHTML = await content.render(id);
+    }
+    if(content.afterRender) await content.afterRender(id);
 };
 
 router.on({
     // Neu user truy cap vao duong dan / thi se lam viec gi do
 
-    "/": () => {
-        renders(HomePage.render());
+    "/":  () => {
+        renders(HomePage);
     },
-    // "/tuyensinh": () => {
-    //     renders(Tuyensinh.render());
-    // },
-    // "/chuongtrinhdaotao": () => {
-    //     renders(Chuongtrinhdaotao.render());
-    // },
-    // "/goctuyensinh": () => {
-    //     renders(Chuongtrinhdaotao.render());
-    // },
-    // "/tuyendung": () => {
-    //     renders(Chuongtrinhdaotao);
-    // },
-    // "/details/:id": ({ data }) => {
-    //     const { id } = data;
-    //     renders(detailsPage.render(+id));
-    // },
-    // "/admin/": () => {
-    //     renders(adminPage.render());
-    // },
+   
     "/singin": () => {
-        renders(signInPage.render());
+        renders(signInPage);
     },
     "/singup": () => {
-        renders(signUpPage.render());
+        renders(signUpPage);
     },
     "/admin/dashboard": () => {
-        renders(dashboardPage.render());
+        renders(dashboardPage);
     },
     "/admin/news": () => {
-        renders(NewsPage.render());
+        renders(NewsPage);
     },
 
     "/admin/news/add": () => {
-        renders(addNewPage.render());
+        renders(addNewPage);
     },
     
-    "/details/:id": ({ data }) => {
-        const { id } = data;
-        renders(detailsproductPageWoment.render(+id));
-    },
     
-    "/admin/news/edit:id": (value) => {
-        renders(editproductAdmin.render(value.data.id));
-    },
+    "/details/:id": ({ data }) => renders(detailsproductPageWoment, data.id),
+    
+    
+    "/admin/news/:id/edit": ({ data }) => renders(editproductAdmin, data.id),
 
 
 
 
 });
 router.resolve();
+
+
+// const getProduct = () => new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         try {
+//             resolve([1, 2, 3, 4]);
+//         } catch (error) {
+//             reject("ket noi khong thanh cong");
+            
+//         }
+        
+//     }, 3000); 
+// })
+// const showProduct = async () => {
+//     const result =  await getProduct();
+//     const data = await [...result, 5]
+//     console.log(data)
+// }
+// showProduct()
+
+

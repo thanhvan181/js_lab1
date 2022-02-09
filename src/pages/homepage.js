@@ -14,14 +14,14 @@ import newletter from "../components/newletter";
 import footer from "../components/footer";
 
 const HomePage = {
-    render() {
+   async render() {
         return /* html */ `
         
         
         ${navbars.render()}
         ${banner.render()}
-        ${Mens.render()}
-        ${womens.render()}
+        ${await Mens.render()}
+        
        
         ${footer.render()}
          </div>

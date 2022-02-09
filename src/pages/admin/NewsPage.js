@@ -1,10 +1,19 @@
 import NewsAdmin from "../../components/admin/NewsAdmin"
 import asideAdmin from "../../components/admin/asideAdmin"
-import navbar_admin from "../../components/admin/navbarAdmin"
+
 const NewsPage = {
-    render() {
+   
+    async render() {
+
+        console.log("newadmin",  NewsAdmin.render());
+
         return /* html */`
-        ${NewsAdmin.render()}
+        ${await NewsAdmin.render()}
+
+
+        
+
+       
 
         ${asideAdmin.render()}
         
@@ -13,6 +22,10 @@ const NewsPage = {
         
 
         `
+    },
+    async afterRender() {
+        return await NewsAdmin.afterRender();
+       
     }
 }
 export default NewsPage

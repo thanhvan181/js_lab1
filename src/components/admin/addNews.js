@@ -1,6 +1,9 @@
+import axios from 'axios';
+
 const addNews = {
 
     render() {
+        console.log("Render ADDD........")
         return /* html */`
        
         
@@ -13,35 +16,11 @@ const addNews = {
 
         <div class="mt-8 add_container ">
             <div class="bg-white py-8 px-6 shadow rounded-lg ">
-            <form class="mb-0 space-y-6" action="#" method="POST">
-                <div>
-                <label for="email" class="block text-sm font-medium text-gray-700">News Image</label>
-                <div class="mt-1">
-                    <input id="email" name="email" type="file" autocomplete="email" required class="" />
-                </div>
-                </div>
-
-                <div>
-                <label for="password" class="block text-sm font-medium text-gray-700">News Title</label>
-                <div class="mt-1">
-                    <input id="password" name="password" type="password" autocomplete="current-password" required class="" />
-                </div>
-                </div>
-                <div>
-                <label for="password" class="block text-sm font-medium text-gray-700"> News Desc</label>
-                <div class="mt-1">
-                    <input id="password" name="password" type="password" autocomplete="current-password" required class="" />
-                </div>
-                </div>
-               
-                
-                
-               
-
-                
-                <div>
-                <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Add New</button>
-                </div>
+            <form id="form-add-post">
+                <input type="text" class="border border-black p-3" id="title-post" placeholder="Title"/><br />
+                <input type="text" class="border border-black mt-4 mb-4 p-3" id="img-post" placeholder="Img" /><br />
+                <textarea name="" cols="30" rows="10" class="border border-black p-3" id="desc-post" placeholder="Description"></textarea><br />
+                <button>Thêm</button>
             </form>
             </div>
         </div>
@@ -51,6 +30,38 @@ const addNews = {
 
 
         `
+    },
+    afterRender() {
+        // console.log("SELECt", document.querySelector('#form-add-post'));
+        // const formAdd = document.querySelector('#form-add-post');
+        // formAdd.addEventListener('submit', function (e) {
+        //     e.preventDefault();
+        //     const post = {
+        //         title: document.querySelector('#title-post').value,
+        //         img: document.querySelector('#img-post').value,
+        //         desc: document.querySelector('#desc-post').value
+        //     };
+
+        //     console.log("Post data to AIP: ,.....")
+        //     fetch('http://localhost:3002/posts', {
+        //         method: "POST",
+        //         headers: {
+        //             'Content-Type': 'application/json'
+        //             // 'Content-Type': 'application/x-www-form-urlencoded',
+        //         },
+        //         body: JSON.stringify(post)
+        //     })
+        // });
+
+        const formAdd = document.querySelector('#form-add-post');
+        formAdd.addEventListener('submit', function(e){
+            e.preventDefault();
+            add({
+                title: document.querySelector('#title-post').value,
+                img: document.querySelector('#img-post').value,
+                desc: document.querySelector('#desc-post').value
+            });
+        });
     }
 }
-export default addNews
+export default addNews;
