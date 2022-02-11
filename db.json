@@ -91,45 +91,9 @@
     },
     {
       "title": "",
-      "img": "http://res.cloudinary.com/ecommerce-vanthanh/image/upload/v1644379859/eco-van/s0yweibkaiaiwypl7pjk.jpg",
-      "desc": "",
-      "id": "QFgIQy8"
-    },
-    {
-      "title": "",
-      "img": "http://res.cloudinary.com/ecommerce-vanthanh/image/upload/v1644379860/eco-van/upnynoejb1meoepnglor.jpg",
-      "desc": "",
-      "id": "v_xna6O"
-    },
-    {
-      "title": "",
-      "img": "http://res.cloudinary.com/ecommerce-vanthanh/image/upload/v1644379861/eco-van/ptkzjrtnvvvx1ep34xzn.jpg",
-      "desc": "",
-      "id": "Pkh_sBp"
-    },
-    {
-      "title": "",
       "img": "http://res.cloudinary.com/ecommerce-vanthanh/image/upload/v1644379861/eco-van/hrcsrlxwqardqqtfihkv.jpg",
       "desc": "",
       "id": "Ct11rga"
-    },
-    {
-      "title": "",
-      "img": "http://res.cloudinary.com/ecommerce-vanthanh/image/upload/v1644379862/eco-van/ui9dmmxsqdckjs5wbt56.jpg",
-      "desc": "",
-      "id": "XxBS7E9"
-    },
-    {
-      "title": "",
-      "img": "http://res.cloudinary.com/ecommerce-vanthanh/image/upload/v1644379876/eco-van/ggdkbp4ccnvjm94ysovc.jpg",
-      "desc": "",
-      "id": "lj2tZwd"
-    },
-    {
-      "title": "",
-      "img": "http://res.cloudinary.com/ecommerce-vanthanh/image/upload/v1644379877/eco-van/hiwhhudire5ye4usjm5d.jpg",
-      "desc": "",
-      "id": "6aAxYO8"
     }
   ],
   "users": [
@@ -144,6 +108,18 @@
       "password": "$2a$10$/Uzew/JDGVAaPzoxShXfk.rbAvWQKTE3qgKygN.x9CmBijwgrCB8q",
       "username": "vanntph17034",
       "id": 2
+    },
+    {
+      "email": "congnguyen@gmail.com",
+      "password": "$2a$10$0ksTTYpnIdqXmQYdb2Ki4eSp7QQXaDPLsWNCzQV/ByrJBP/0SSh4m",
+      "username": "nguyencongnguyen",
+      "id": 3
+    },
+    {
+      "email": "vanvu@gamil.com",
+      "password": "$2a$10$Xk76aPM4rNNFuPi.5fR.suk.IsCVCAKpWHMIU5QWiFUVHC.kVEx/2",
+      "username": "vanvu",
+      "id": 4
     }
   ]
 }

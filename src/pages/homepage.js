@@ -14,8 +14,8 @@ import newletter from "../components/newletter";
 import footer from "../components/footer";
 
 const HomePage = {
-   async render() {
-        return /* html */ `
+  async render() {
+    return /* html */ `
         
         
         ${navbars.render()}
@@ -27,7 +27,9 @@ const HomePage = {
          </div>
         
         `;
-    },
-
+  },
+  afterRender() {
+    navbars.afterRender();
+  },
 };
 export default HomePage;
